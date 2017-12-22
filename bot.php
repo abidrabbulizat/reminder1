@@ -1,16 +1,11 @@
 <?php
-/*
-copyright @ medantechno.com
-Modified @ Farzain - zFz
-2017
 
-*/
 
 require_once('./line_class.php');
 require_once('./unirest-php-master/src/Unirest.php');
 
-$channelAccessToken = 'i3P2Uh1DI6+byjqm2kebqUoYlVrElywg6m+44nnmtaRGEPhz5PPZFgWyDJiR3FaC4KfcYwc9doqUM8J9Rnzi0bfXSNSqWX+HHbftj+PK1whzGHr9Exf1vhezzNAgQX0qCJkOp2rr4UpYzQraYxxk7wdB04t89/1O/w1cDnyilFU='; //sesuaikan 
-$channelSecret = 'bb8034c86aced1e2efc2a94826ec1866';//sesuaikan
+$channelAccessToken = 'YOUR-CHANNEL-ACCESS-TOKEN'; //sesuaikan 
+$channelSecret = 'YOUR-CHANNEL-SECRET-CODE';//sesuaikan
 
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 
@@ -69,7 +64,7 @@ function shalat($keyword) {
 
 //show menu, saat join dan command /menu
 if ($type == 'join' || $command == '/menu') {
-    $text = "Assalamualaikum Kakakku, aku adalah bot jadwal shalat, silahkan ketik\n\n/shalat <nama tempat>\n\nnanti aku bakalan kasih tahu jam berapa waktunya shalat ^_^";
+    $text = "Assalamualaikum Kakak, aku adalah bot jadwal shalat, silahkan ketik\n\n/shalat <nama tempat>\n\nnanti aku bakalan kasih tahu jam berapa waktunya shalat ^_^";
     $balas = array(
         'replyToken' => $replyToken,
         'messages' => array(
