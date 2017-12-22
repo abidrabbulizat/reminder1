@@ -70,7 +70,7 @@ if ($type == 'join' || $command == '/menu') {
         'messages' => array(
             array(
                 'type' => 'text',
-                'text' => $text
+                'text' => $result
             )
         )
     );
