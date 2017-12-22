@@ -1,6 +1,6 @@
 {
-  "name": "Line_Bot_Shalat",
-  "description": "Jadwal Shalat Untuk Bot Line",
-  "repository": "https://github.com/zFz0000/Line_Bot_Shalat",
+  "name": "Line Bot REminder",
+  "description": "Bot Reminder",
+  "repository": "https://github.com/abidrabbulizat/reminder1",
   "keywords": ["line bot", "messaging api"]
 }
