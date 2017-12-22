@@ -81,6 +81,22 @@ if ($type == 'join' || $command == '/menu') {
     );
 }
 
+//confirm
+if($message['type']=='confirm') {
+	    if ($command == '/test') {
+
+        $result = shalat($options);
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array(
+                    'type' => 'text',
+                    'text' => $r1
+                )
+            )
+        );
+    }
+
 //pesan bergambar
 if($message['type']=='text') {
 	    if ($command == '/shalat') {
