@@ -82,16 +82,15 @@ if ($type == 'join' || $command == '/menu') {
 }
 
 //confirm
-if($message['type']=='confirm') {
+if($message['type']=='text') {
 	    if ($command == '/test') {
-
-        $result = shalat($options);
+$text = "Ngetest doang nih -.-\n\n/shalat <nama tempat>\n\nnanti aku bakalan kasih tahu jam berapa waktunya shalat ^_^";
         $balas = array(
             'replyToken' => $replyToken,
             'messages' => array(
                 array(
                     'type' => 'text',
-                    'text' => $result
+                    'text' => $result1
                 )
             )
         );
@@ -108,7 +107,7 @@ if($message['type']=='text') {
             'messages' => array(
                 array(
                     'type' => 'text',
-                    'text' => $result
+                    'text' => $text
                 )
             )
         );
