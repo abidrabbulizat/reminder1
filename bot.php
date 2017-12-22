@@ -91,11 +91,12 @@ if($message['type']=='confirm') {
             'messages' => array(
                 array(
                     'type' => 'text',
-                    'text' => $r1
+                    'text' => $result
                 )
             )
         );
     }
+}
 
 //pesan bergambar
 if($message['type']=='text') {
