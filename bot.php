@@ -84,7 +84,7 @@ if ($type == 'join' || $command == '/menu') {
 //confirm
 if($message['type']=='text') {
 	    if ($command == '/test') {
-$text = "Ngetest doang nih -.-\n\n/shalat <nama tempat>\n\nnanti aku bakalan kasih tahu jam berapa waktunya shalat ^_^";
+$result1 = "Ngetest doang nih -.-\n\n/shalat <nama tempat>\n\nnanti aku bakalan kasih tahu jam berapa waktunya shalat ^_^";
         $balas = array(
             'replyToken' => $replyToken,
             'messages' => array(
@@ -95,7 +95,6 @@ $text = "Ngetest doang nih -.-\n\n/shalat <nama tempat>\n\nnanti aku bakalan kas
             )
         );
     }
-}
 
 //pesan bergambar
 if($message['type']=='text') {
